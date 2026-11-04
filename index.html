@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- --- Document Setup & Styles --- -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Laila</title>
+  
+  <!-- Professionelle Schriftart (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="margin: 0; min-height: 100vh; display: flex; flex-direction: column;">
+
+  <main class="content-wrapper" style="padding-top: 60px;">
+
+    <!-- Profil-Bereich (Foto & Text nebeneinander) -->
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 3rem; margin-bottom: 60px; flex-wrap: wrap;">
+      
+      <!-- Image Box -->
+      <div style="border-radius: 50%; height: 260px; width: 260px; overflow: hidden; flex-shrink: 0; box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08)); border: 3px solid var(--border-color, #e2e8f0);">
+        <img src="bw_foto.jpg" alt="Profilbild Laila" style="width: 100%; height: 100%; object-fit: cover;"/>
+      </div>
+      
+      <!-- Text Box -->
+      <div style="flex: 1; min-width: 280px;">
+        <h1 class="neon-text" style="font-size: 3rem; font-weight: 700; line-height: 1.2; margin: 0; color: var(--primary-color, #0f172a);">Laila Voss</h1>
+        <h2 style="font-size: 1.2rem; font-weight: 600; margin-top: 0.5rem; border: none; padding: 0; color: var(--text-muted, #64748b);">B.Sc. Digitale Medien</h2>
+        
+        <div style="margin-top: 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
+          <p style="margin: 0; font-size: 1.05rem; color: var(--primary-color, #0f172a);"><b>Bereiche:</b> Webentwicklung, UI/UX Design, Grafikdesign, Fotografie, Videografie</p>
+          <p style="margin: 0; font-size: 1.05rem; color: var(--primary-color, #0f172a);"><b>Highlights:</b> B.Sc. Note 1,26 | Wissenschaftliche Publikation auf der Mensch und Computer 2026</p>
+          <p style="margin: 0; font-size: 1.05rem; color: var(--primary-color, #0f172a);"><b>Standort:</b> Bremen, Deutschland</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Projekte Sektion -->
+    <h2>Projekte</h2>
+    
+    <div class="Grid">
+      
+      <!-- Projekt 1 -->
+      <div class="container" data-day="1">
+        <a class="click" href="sites/MN_site.html" style="display: block; background: none; padding: 0; border: none;">
+          <img src="assets/MN_logo.png" alt="Mount Natural" class="selection"/>
+        </a>
+        <div style="padding: 20px;">
+          <p class="project-title" style="font-weight: bold; font-size: 1.15rem; margin: 0 0 6px 0; color: var(--primary-color, #0f172a);">Mount Natural</p>
+          <p class="project-description" style="font-size: 0.95rem; margin: 0; color: var(--text-muted, #64748b);">Product-Content für Social Media</p>
+        </div>
+      </div>
+
+      <!-- Projekt 2 -->
+      <div class="container" data-day="1">
+        <a class="click" href="sites/SB_site.html" style="display: block; background: none; padding: 0; border: none;">
+          <img src="assets/SB_logo.png" alt="Spielboard" class="selection" />
+        </a>
+        <div style="padding: 20px;">
+          <p class="project-title" style="font-weight: bold; font-size: 1.15rem; margin: 0 0 6px 0; color: var(--primary-color, #0f172a);">Spielboard</p>
+          <p class="project-description" style="font-size: 0.95rem; margin: 0; color: var(--text-muted, #64748b);">KI-gestützte Storyboard-Anwendung</p>
+        </div>
+      </div>
+
+      <!-- Projekt 3 -->
+      <div class="container" data-day="1">
+        <a class="click" href="sites/Releaf_site.html" style="display: block; background: none; padding: 0; border: none;">
+          <img src="assets/Releaf_logo.png" alt="ReLeaf" class="selection"/>
+        </a>
+        <div style="padding: 20px;">
+          <p class="project-title" style="font-weight: bold; font-size: 1.15rem; margin: 0 0 6px 0; color: var(--primary-color, #0f172a);">ReLeaf</p>
+          <p class="project-description" style="font-size: 0.95rem; margin: 0; color: var(--text-muted, #64748b);">Prototyp für eine Routine Webanwendung</p>
+        </div>
+      </div>
+
+      <!-- Projekt 4 -->
+      <div class="container" data-day="1">
+        <a class="click" href="sites/H_site.html" style="display: block; background: none; padding: 0; border: none;">
+          <img src="assets/HO_logo.png" alt="Heredero del Oficio" class="selection"/>
+        </a>
+        <div style="padding: 20px;">
+          <p class="project-title" style="font-weight: bold; font-size: 1.15rem; margin: 0 0 6px 0; color: var(--primary-color, #0f172a);">Heredero del Oficio</p>
+          <p class="project-description" style="font-size: 0.95rem; margin: 0; color: var(--text-muted, #64748b);">Spiel über die Keramikherstellung einer spanischen Kleinstadt</p>
+        </div>
+      </div>
+
+      <!-- Projekt 5 -->
+      <div class="container" data-day="1">
+        <a class="click" href="sites/LS_site.html" style="display: block; background: none; padding: 0; border: none;">
+          <img src="assets/LS_logo.png" alt="Loudspeaker" class="selection"/>
+        </a>
+        <div style="padding: 20px;">
+          <p class="project-title" style="font-weight: bold; font-size: 1.15rem; margin: 0 0 6px 0; color: var(--primary-color, #0f172a);">Loudspeaker</p>
+          <p class="project-description" style="font-size: 0.95rem; margin: 0; color: var(--text-muted, #64748b);">Kurzes Animationsvideo über einen aufdringlichen Lautsprecher</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

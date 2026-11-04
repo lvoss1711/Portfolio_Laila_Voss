@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - ReLeaf | Laila</title>
+  
+  <!-- Professionelle Schriftart (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    /* Zwingt das Video dazu, sein echtes Seitenverhältnis zu behalten */
+    video.selection {
+      height: auto !important;
+      max-height: 75vh;
+      object-fit: contain;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div style="margin: 0 auto;">
+      <a href="../index.html" class="back-link" title="Zurück zur Übersicht">
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hauptinhalt -->
+  <main class="content-wrapper">
+    
+    <!-- Projekttitel / Header Bereich -->
+    <div style="padding: 40px 0 20px 0;">
+      <img src="site_assets/LS_b_header.png" alt="Project Header" style="max-width: 500px; width: 100%; height: auto; display: block;"/>
+    </div>
+
+    <h2>Animationsvideo</h2>
+  
+    <!-- Container mit maximaler Breite, damit das Video schön zentriert und proportioniert bleibt -->
+    <div class="container" style="max-width: 900px; margin: 0 auto; overflow: hidden; background: #000;">
+      <video src="site_assets/LS.mov" class="selection" controls></video>
+    </div>
+     
+  </main>
+
+</body>
+</html>

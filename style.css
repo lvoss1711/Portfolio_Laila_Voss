@@ -1,0 +1,244 @@
+
+
+nav {
+  width: 100%;
+  background-color: #acc3e9c9;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(246, 249, 255);
+  background-color: rgba(28, 50, 80, 0.804);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+p{
+  color: rgb(28, 50, 80);
+  font-size: 1.2rem
+}
+
+project-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+}
+
+project-description {
+  font-size: 1.1rem;
+  margin: 5px 0px;
+}
+
+.btn {
+  text-decoration: none;
+  color: rgb(246, 249, 255);
+  background-color: rgba(28, 50, 80, 0.804);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-color, #2563eb);
+}
+
+/* Modernes Grid für die Projekt-Übersicht */
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 0 60px 0;
+  width: 100%;
+  margin: 0;
+}
+
+
+.selection{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+ :root {
+      --primary-color: #0f172a;
+      --accent-color: #2563eb;
+      --accent-hover: #1d4ed8;
+      --bg-color: #fafafa;
+      --card-bg: #ffffff;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius: 15px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--primary-color);
+    }
+
+    /* Container Zentrierung */
+    .content-wrapper {
+    
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 70px 50px 70px;
+      box-sizing: border-box;
+      flex: 1;
+    }
+
+    /* Header & Navigation */
+    .navbar {
+      width: 100%;
+      padding: 15px 40px;
+      box-sizing: border-box;
+      background-color: transparent;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--primary-color);
+      transition: all 0.2s ease;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      padding: 5px 8px;
+    }
+
+    .back-link:hover {
+      transform: translateX(-3px);
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Ueberschriften */
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: var(--border-color);
+    }
+
+    /* Grid Layout */
+    .Grid_SB {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .container {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .container img.selection {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+/* Spezielles Styling für Videos, damit sie ihr Seitenverhältnis behalten */
+.container video.selection {
+  width: 100%;
+  height: auto;       /* Passt die Höhe automatisch an das originale Seitenverhältnis an */
+  max-height: 75vh;   /* Verhindert, dass das Video auf großen Bildschirmen zu hoch wird */
+  object-fit: contain;
+  display: block;
+  background-color: #000; /* Schwarzer Hintergrund für eventuelle Ränder im Player */
+}
+    /* Styling fuer Buttons & Links */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background-color: var(--card-bg);
+      color: var(--primary-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+      width: fit-content;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-color);
+      color: #ffffff;
+      border-color: var(--accent-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Publikationsbereich */
+    .publication-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      box-shadow: var(--shadow-sm);
+      max-width: 320px;
+    }
+
+    .publication-card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Media Query fuer mobile Bildschirme */
+    @media (max-width: 768px) {
+      .content-wrapper, .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
