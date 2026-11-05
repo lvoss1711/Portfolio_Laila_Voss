@@ -29,54 +29,40 @@
 
   <!-- Hauptinhalt -->
   <main class="content-wrapper">
-    
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 3rem; margin-bottom: 60px; flex-wrap: wrap;">
     <!-- Header Bild / Logo -->
-    <div style="border-radius: 50%; height: 260px; width: 260px; overflow: hidden; flex-shrink: 0; box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08)); border: 3px solid #EC677A; margin-top: 30px;">
+    <div style="border-radius: 50%; height: 260px; width: 260px; overflow: hidden; flex-shrink: 0; box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08)); border: 3px solid #ec677b61; margin-top: 30px;">
         <img src="../bw_foto.jpg" alt="Profilbild Laila" style="width: 100%; height: 100%; object-fit: cover;"/>
       </div>
 
-     <!-- Trailer Sektion -->
-    <h2>Trailer</h2>
+<div style="flex: 1; min-width: 280px;">
+        <h1 class="neon-text" style="font-size: 3rem; font-weight: 700; line-height: 1.2; margin: 0; color: var(--primary-color, #0f172a);">Meine Projekte</h1>
+        <div style="margin-top: 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
+          <p style="margin: 0; font-size: 1.05rem; color: var(--primary-color, #0f172a);">• Musikvideo</p>
+          <p style="margin: 0; font-size: 1.05rem; color: var(--primary-color, #0f172a);">• Digitaler Adventskalender</p>
+        </div>
+    </div>
+  </div>
+
+    <h2>Musikvideo</h2>
     
     <div class="container" style="max-width: 900px; margin: 0 auto; overflow: hidden; background: #000;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/K-R_BEFAz1I?si=h25QVZ3P7rg0QNm3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+  <iframe src="https://www.youtube.com/embed/K-R_BEFAz1I?si=h25QVZ3P7rg0QNm3" title="YouTube video player" frameborder="0" style="width: 100%; height: auto; aspect-ratio: 16 / 9; display: block;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
     <!-- Übersicht Sektion -->
-    <h2>Artbook</h2>
+    <h2>Digitaler Adventskalender</h2>
     
-    <div class="Grid_SB">
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/0.png" alt="Project Kolloquium 15" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/1.png" alt="Project Kolloquium 10" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/2.png" alt="Project Kolloquium 11" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/3.png" alt="Project Kolloquium 12" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/4.png" alt="Project Kolloquium 13" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/5.png" alt="Project Kolloquium 14" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/6.png" alt="Project Kolloquium 15" class="selection"/>
-      </div>
-      <div class="container" data-day="1">
-        <img src="site_assets/Heredero del oficio ARTBOOK/7.png" alt="Project Kolloquium 15" class="selection"/>
-      </div>
+    <div class="container" style="max-width: 900px; margin: 0 auto; overflow: hidden; background: #000;">
+      <video autoplay muted loop playsinline src="site_assets/AK_0.mp4" class="selection" controls poster="site_assets/AK_1.png"></video>
     </div>
 
-    <!-- Vollständige Präsentation Button (außerhalb des Grids für sauberen Flow) -->
-    <a href="https://canva.link/z8lztqnud3ya4yr" target="_blank" rel="noopener" class="btn">
-      Vollständiges Artbook ansehen
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-    </a>
+    <div style="text-align: center; margin-top: 15px;">
+      <a href="https://lvoss1711.github.io/Adventskalender/" target="_blank" rel="noopener" class="btn" style="display: inline-flex; align-items: center; gap: 8px;">
+        Zum Adventskalender
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+    </div>
 
   
 
