@@ -151,12 +151,20 @@ project-description {
     }
 
     /* Grid Layout */
-    .Grid_SB {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
-      gap: 20px;
-      margin-bottom: 24px;
-    }
+    /* Laptop-Ansicht: Bleibt exakt wie von Ihnen gewohnt */
+.Grid_SB {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* Wird NUR auf Smartphones und kleinen Bildschirmen (unter 768px Breite) aktiv */
+@media (max-width: 768px) {
+  .Grid_SB {
+    grid-template-columns: 1fr; /* Erzwingt eine einzelne Spalte auf Handys */
+  }
+}
 
     .container {
       background: var(--card-bg);
