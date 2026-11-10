@@ -151,7 +151,6 @@ project-description {
     }
 
     /* Grid Layout */
-    /* Laptop-Ansicht: Bleibt exakt wie von Ihnen gewohnt */
 .Grid_SB {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
